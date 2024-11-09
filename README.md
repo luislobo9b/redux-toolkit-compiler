@@ -8,7 +8,7 @@ NPM 10.9.0 ou superior
 NVM (for windows) 1.1.12 ou superior
 
 ## Como Usar
-Você pode utilizar apenas baixando o arquivo desejado na pasta dist ou compilar por você mesmo seguindo os passos abaixo
+Você pode utilizar apenas baixando o arquivo desejado na pasta dist ou compilar por você mesmo seguindo os passos abaixo:
 
 ### 1. Clone o repositório
 ```bash
@@ -26,6 +26,6 @@ Rode o comando com a versão desejada:
 ```bash
 npm  run  build:development
 npm  run  build:production
-npm  run  build:developmentcjs
-npm  run  build:productioncjs
+npm  run  build:development-umd
+npm  run  build:production-umd
 ```
