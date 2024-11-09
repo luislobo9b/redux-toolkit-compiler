@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:development": "set NODE_ENV=development && rollup -c",
-    "build:production": "set NODE_ENV=production && rollup -c",
+    "build:development": "set NODE_ENV=development && set REDUX_FILE_FORMAT=esm && rollup -c",
+    "build:production": "set NODE_ENV=production && set REDUX_FILE_FORMAT=esm && rollup -c",
+    "build:developmentcjs": "set NODE_ENV=development && set REDUX_FILE_FORMAT=cjs && rollup -c",
+    "build:productioncjs": "set NODE_ENV=production && set REDUX_FILE_FORMAT=cjs && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
