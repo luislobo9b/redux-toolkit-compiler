@@ -1,4 +1,4 @@
-import { nodeResolve } from "@rollup/plugin-node-resolve"
+import nodeResolve from "@rollup/plugin-node-resolve"
 import replace from "@rollup/plugin-replace"
 import terser from "@rollup/plugin-terser"
 import commonjs from "@rollup/plugin-commonjs"
