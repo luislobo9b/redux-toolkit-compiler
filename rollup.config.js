@@ -11,7 +11,7 @@ const environment = (process.env.NODE_ENV || "production").trim(),
 export default {
 	input: "src/" + (isUmd ? "compiler-umd.js" : "compiler.js"),
 	output: {
-		file: "dist/" + "redux-toolkit" + (isMinified ? ".min" : "") + (isUmd ? ".umd" : "") + ".js",
+		file: "dist/" + "redux-toolkit" + (isUmd ? ".umd" : "") + (isMinified ? ".min" : "") + ".js",
 		format
 	},
 	plugins: [
