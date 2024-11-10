@@ -6,12 +6,12 @@ import commonjs from "@rollup/plugin-commonjs"
 const environment = (process.env.NODE_ENV || "production").trim(),
 	isMinified = environment === "production",
 	format = (process.env.REDUX_FILE_FORMAT || "esm").trim(),
-	isUmd = format === "umd"
+	isIife = format === "iife"
 
 export default {
-	input: "src/" + (isUmd ? "compiler-umd.js" : "compiler.js"),
+	input: "src/" + (isIife ? "compiler-iife.js" : "compiler.js"),
 	output: {
-		file: "dist/" + "redux-toolkit" + (isUmd ? ".umd" : "") + (isMinified ? ".min" : "") + ".js",
+		file: "dist/" + "redux-toolkit" + (isIife ? ".iife" : "") + (isMinified ? ".min" : "") + ".js",
 		format
 	},
 	plugins: [
@@ -20,7 +20,7 @@ export default {
 			"process.env.NODE_ENV": JSON.stringify(environment),
 			preventAssignment: true
 		}),
-		isUmd ? commonjs() : null,
+		isIife ? commonjs() : null,
 		isMinified ? terser() : null
 	].filter(Boolean)
 }

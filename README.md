@@ -26,6 +26,6 @@ Rode o comando com a versão desejada:
 ```bash
 npm run build:development
 npm run build:production
-npm run build:development-umd
-npm run build:production-umd
+npm run build:development-iife
+npm run build:production-iife
 ```

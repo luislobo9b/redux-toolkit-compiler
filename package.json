@@ -5,8 +5,8 @@
   "scripts": {
     "build:development": "set NODE_ENV=development && set REDUX_FILE_FORMAT=esm && rollup -c",
     "build:production": "set NODE_ENV=production && set REDUX_FILE_FORMAT=esm && rollup -c",
-    "build:development-umd": "set NODE_ENV=development && set REDUX_FILE_FORMAT=umd && rollup -c",
-    "build:production-umd": "set NODE_ENV=production && set REDUX_FILE_FORMAT=umd && rollup -c",
+    "build:development-iife": "set NODE_ENV=development && set REDUX_FILE_FORMAT=iife && rollup -c",
+    "build:production-iife": "set NODE_ENV=production && set REDUX_FILE_FORMAT=iife && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
